@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+
+       xsi:schemaLocation="
+                  http://www.springframework.org/schema/beans
+                  http://www.springframework.org/schema/beans/spring-beans.xsd
+                  http://www.springframework.org/schema/context
+                  http://www.springframework.org/schema/context/spring-context.xsd
+       ">
+
+    <!--<bean id="userDao" class="com.zhang.dao.Impl.UserdaoImpl"></bean>-->
+
+
+    <!--<bean id="userDao" class="com.zhang.factory.StaticFactory" factory-method="getUserDao"></bean>-->
+
+    <!--<bean id="factory" class="com.zhang.factory.DynamicFactory"></bean>
+    <bean id="userDao" factory-bean="factory" factory-method="getUserDao"></bean>-->
+
+    <!--<bean id="userDao" class="com.zhang.dao.Impl.UserdaoImpl">
+        &lt;!&ndash;<property name="username" value="zhangsan"></property>
+        <property name="age" value="13"></property>&ndash;&gt;
+        <property name="strList">
+            <list>
+                <value>aaa</value>
+                <value>bbb</value>
+                <value>ccc</value>
+            </list>
+        </property>
+        <property name="userMap">
+            <map>
+                <entry key="user1" value-ref="user1"></entry>
+                <entry key="user2" value-ref="user2"></entry>
+            </map>
+        </property>
+        <property name="properties">
+            <props>
+                <prop key="p1">p</prop>
+                <prop key="p2">pp</prop>
+                <prop key="p3">ppp</prop>
+            </props>
+        </property>
+    </bean>
+
+    &lt;!&ndash;<bean id="user1" class="com.domain.User">
+        <property name="name" value="zhangsan"></property>
+        <property name="addr" value="zhuhai"></property>
+    </bean>
+
+    <bean id="user2" class="com.domain.User">
+        <property name="name" value="lisi"></property>
+        <property name="addr" value="shantou"></property>
+    </bean>&ndash;&gt;
+
+    &lt;!&ndash;<bean id="userService" class="com.impl.service.UserServiceImpl">
+        <property name="userdao" ref="userDao"></property>
+    </bean>&ndash;&gt;
+
+    &lt;!&ndash;<bean id="userService" class="com.impl.service.UserServiceImpl" p:userdao-ref="userDao"/>&ndash;&gt;
+
+    <bean id="userService" class="com.impl.service.UserServiceImpl">
+        <constructor-arg name="userdao" ref="userDao"></constructor-arg>
+    </bean>
+
+    <context:property-placeholder location="classpath:*.properties" system-properties-mode="NEVER"/>
+
+    <bean id="dateSource" class="com.alibaba.druid.pool.DruidDataSource">
+        <property name="driverClassName" value="${jdbc.driver}"></property>
+        <property name="url" value="${jdbc.url}"></property>
+        <property name="username" value="${jdbc.username}"></property>
+        <property name="password" value="${jdbc.password}"></property>
+    </bean>
+-->
+
+
+
+</beans>
