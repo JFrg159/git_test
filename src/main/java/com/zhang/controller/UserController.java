@@ -36,7 +36,7 @@ public class UserController {
 
     @RequestMapping("/jsonuser")
     public String jsonuser(@RequestBody User user){
-        return "{'jsonuser':'springmv'}";
+        return "{'jsonuser':'springmvdsadsa'}";
     }
 
 }
